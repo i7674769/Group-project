@@ -8,7 +8,13 @@
         $tweet = $_POST['tweet'];
         
         if(empty($tweet)) {
-            $message = "Invalid tweet";
+            echo '<script type="text/javascript" language="Javascript">  
+            alert("Please enter a post!") 
+            </script>'; 
+        }else if (empty($place_of_post)) {
+            echo '<script type="text/javascript" language="Javascript">  
+            alert("Please enter a place!") 
+            </script>'; 
         }else {
             $query = "INSERT INTO posts (tweet, user_id, gender) VALUES ('{$tweet}', '{$_SESSION['user_id']}', '{$_SESSION['gender']}')"; 
             $result = mysqli_query($connect, $query); 
