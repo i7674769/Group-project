@@ -13,8 +13,12 @@
 
     <div id="place_delete_edit">   
         <div class="place_of_post" <p><?php echo "Place: ".ucfirst($row["place_of_post"]); ?></p> </div>
+    
+    <?php if ($_SESSION["user_id"] == $row["user_id"]) {?>
         <div class="delete_edit" id="delete_post"><a href="delete_post.php?id=<?php echo $row["id"]; ?>">Delete post?</a></div>
-        <div class="delete_edit" id="edit_post"><a href="edit_post.php?id=<?php echo $_SESSION["user_id"] ?>">Edit post?</a></div> 
+        <div class="delete_edit" id="edit_post"><a href="edit_post.php?id=<?php echo $row["id"]; ?>">Edit post?</a></div> 
+    <?php } ?>
+
     </div> 
         <div class="gender" <h2><?php echo ucfirst($row["gender"]).":"; ?></h2> </div>
         <div class="tweet" <p><?php echo ucfirst($row["tweet"]); ?></p> </div>
@@ -22,4 +26,3 @@
 
 
 <?php } ?>
-        
