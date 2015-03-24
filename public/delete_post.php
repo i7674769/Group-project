@@ -4,8 +4,10 @@
 
 <?php
     if(isset($_GET["id"])) {
-        $userID = $_GET["id"]; 
-        $query = "DELETE FROM posts WHERE user_id = '{$userID}' LIMIT 1";
+        $postID = $_GET["id"]; 
+        $userID = $_SESSION["user_id"];
+        
+        $query = "DELETE FROM posts WHERE id = '{$postID}' and user_id = '{$_SESSION['user_id']}'";
         $result = mysqli_query($connect, $query); 
 
     } else {
