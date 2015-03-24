@@ -7,24 +7,18 @@
     $ts = $row["dateofpost"];
     $convertedTime = ($timeAgoObject -> convert_datetime($ts)); // Convert Date Time
     $when = ($timeAgoObject -> makeAgo($convertedTime)); // Then convert to ago time
-    ?>
+?>
 
     <div class="time_ago" <h2><?php echo "..".$when; ?></h2> </div>
     
-    <div class="tweet_gender_body2"> 
+    <div id="place_delete_edit2"> 
+        <div class="place_of_post" <p><?php echo "Place: ".ucfirst($row["place_of_post"]); ?></p> </div>
+        <div class="delete_edit" id="delete_post"><a href="delete_post.php?id=<?php echo $row["id"]; ?>">Delete post?</a></div>
+        <div class="delete_edit" id="edit_post"><a href="edit_post.php?id=<?php echo $_SESSION["user_id"] ?>">Edit post?</a></div>    
+    </div>
         <div class="gender" <h2><?php echo ucfirst($row["gender"]).":"; ?></h2> </div>
         <div class="tweet" <p><?php echo ucfirst($row["tweet"]); ?></p> </div>
-        <div class="place_of_post" <p><?php echo "Place: ".ucfirst($row["place_of_post"]); ?></p> </div>
     </div>
-    </div>
-<?php } ?>
-        
- 
-<!--    <div class="comment_bulk2"></div>
 
-    <div class="comment_post2">
-        <form method='post'> 
-            Comment:<input type="text" name="comment" value="" />
-                    <input type="submit" name="submit" value="Comment" />  
-        </form>
-    </div>    -->       
+<?php } ?>
+         
