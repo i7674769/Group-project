@@ -11,7 +11,7 @@ class convertToAgo {
     	list($hour, $minute, $second) = explode(':', $time);
     	$timestamp = mktime($hour, $minute, $second, $month, $day, $year);
     	return $timestamp;
-        //this function conversta into a timestamp in the "2015-01-01 12:12:12" format
+        //this function converts into a timestamp in the "2015-01-01 12:12:12" format
     }
 
     function makeAgo($timestamp){
@@ -31,5 +31,3 @@ class convertToAgo {
 } 
 
 ?>
-
-
