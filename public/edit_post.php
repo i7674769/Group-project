@@ -3,7 +3,7 @@
 <?php require_once("../includes/functions.php"); ?>
 
 <?php if(isset($_SESSION["user"])) {?>
-    <form action="edit_post.php" method="post">
+    <form>
         New post: <input type="text" name="new_tweet" value="" />
         <input type="submit" name="new_post" value="Submit" />
     </form>
@@ -16,10 +16,10 @@
             if (isset($_POST["new_post"])){
                 $new_tweet = $_POST["new_tweet"];
 
-                $query = "UPDATE posts SET tweet='{$new_tweet}' where id='{$postID}'";
+                $query = "DELETE FROM posts WHERE id = '{$postID}' and user_id = '{$_SESSION['user_id']}'";
                 $result = mysqli_query($connect, $query); 
             } else {
-                echo "This is not working!";
+                echo "This is not working, Darlene!";
             }
         $new_tweet = "";
         }
