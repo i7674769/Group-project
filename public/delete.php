@@ -11,4 +11,7 @@
     } else {
         echo "Problem!";
     }
-    ?>
+
+    header('Location: logout.php');
+    exit;
+?>
