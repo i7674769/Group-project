@@ -10,6 +10,7 @@
         $confirm_password = $_POST['confirm_password'];
         $student_id = $_POST['student_id'];
         $gender = $_POST["gender"];
+        $email = $_POST["email"];
         
         if(empty($name)) {
             $message = "Please enter valid name. ";
@@ -29,8 +30,11 @@
         } else if(empty($gender)) {
             $message = "Please enter valid gender. ";
             echo '<div class="message">'.$message.'</div>';
+        } else if(empty($email)) {
+            $message = "Please enter valid email. ";
+            echo '<div class="message">'.$message.'</div>';
         } else {
-            $query = "INSERT INTO users (name, password, student_id, gender) VALUES ('{$name}', '{$password}', '{$student_id}','{$gender}')";
+            $query = "INSERT INTO users (name, password, student_id, email, gender) VALUES ('{$name}', '{$password}', '{$student_id}','{$email}','{$gender}')";
             $result = mysqli_query($connect, $query); 
             $message = "Your account has been registered!";
             echo $message; 
@@ -44,6 +48,7 @@
                     $confirm_password = ""; 
                     $student_id = "";
                     $gender = "";
+                    $email = "";
         }
     }
 ?>
