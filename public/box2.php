@@ -24,7 +24,5 @@
         <div class="tweet" <p><?php echo ucfirst($row["tweet"]); ?></p> </div>
     </div>
 
-
-
 <?php } ?>
         
