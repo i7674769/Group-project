@@ -1,58 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Turtle Talks</title>
-        <link rel="stylesheet" href="styles.css" type="text/css"/>
-    </head>
-    <body>
-        <div align="center">
-            <div id="container">
-                <div id="nav">
-                    <a href="#Darlene">
-                        <div class=section>
-                            <p style="color: white">Home</p>
-                        </div>
-                    </a>
-                    <a href="#Rebecca">                        
-                        <div class=section>
-                            <p style="color: white">About</p>
-                         </div>
-                    </a>
-                    <a href="#Christina">
-                        <div class=section>
-                            <p style="color: white">Search</p>
-                </div>
-                        
-                        <div id="background">
-                  </p>
-                          </div>
-                    <div class=box>
-                    <a name="Darlene"></a>
-                        <img src="file:///Volumes/KINGSTON/html/images/Darlene.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Darlene Büttner</h1>
-                    </div>      
-                    <div class=box>
-                    <a name="Rebecca"></a>
-                        <img src="file:///Volumes/KINGSTON/html/images/bex.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Rebecca Hughes</h1>
-                        </div>
-                    <div class=box>                
-                    <a name="Christina"></a>
-                        <img src="file:///Volumes/KINGSTON/html/images/tina.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Christina Sabine</h1>
-                        </div>
-                    <div class=box>
-                    <a name="Israfiél"></a>
-                    <img src="file:///Volumes/KINGSTON/html/images/rafiel.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Israfiél Négasi</h1>
-                        </div>
-                </div>
-<div id="footer" style="height: 0px; position: fixed; bottom: 20px;">
-Copyright © Turtletalks.com
-</div>
-                </div>
-            </div>
-        </div>`
-    </body>
-</html>
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+#background {
+    width: 955px;
+    height: 116px;
+    background-image: url(images/turtle.png)
+    
+}
+
+#banner {
+    width: 1000px;
+    height: 80px;
+    padding-top: 20px;
+}
+
+#nav {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    float: left;
+    padding: 5px;
+}
+
+.section {
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+	background: #162174;
+	border: 1px solid #0f1658;
+	border-radius: 2px;
+	color: #fff;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-left: -5px;
+}
+
+.section:hover {
+    background: #ffffff;
+    color: #162174;
+}
+
+
+.box {
+    width: 235px;
+    height: 250px;
+    background-color: #afc600;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+    margin-left: 0px;
+    margin: 5px 5px 5px 5px;
+    padding-top: 10px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+	border: 1px solid #98ac00;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+    text-decoration: none;
+    margin-left: 5px;
+    float: left;
+    background: linear-gradient(#afc600, #8c9f00);
+}
+}
+
+.box:hover {
+    background: #279000;
+}
+
+#footer {
+    width: 1000px;
+    height: 0px;
+    position: fixed; 
+    bottom: 20px;
+    background-color: #6c6c6c;
+    padding-top: 0px;
+}
+
+p {
+    margin: 0px;
+}
