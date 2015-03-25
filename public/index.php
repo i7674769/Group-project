@@ -64,6 +64,7 @@
                                 <input type="text" name="name" value="" placeholder="Name" pattern=".{5,}" required title="5 characters minimum"/>
                                 <input type="password" name="password" value="" placeholder="Password" pattern=".{7,}" required title="7 characters minimum"/>
                                 <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
+                                <input type="text" name="email" value="" placeholder="E-Mail"/>
                                 <input type="text" name="student_id" value="" placeholder="Student ID"/>
                                 <div class="dropdown">    
                                     <input type="submit" name="signup" value="Sign up!"/> </p> 
