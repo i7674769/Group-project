@@ -1,7 +1,7 @@
-<?php require_once("../includes/sessions.php"); ?>
-<?php require_once("../includes/signup.php"); ?>
-<?php require_once("../includes/post_submit.php"); ?>
-<?php require_once("../includes/login.php"); ?>
+<?php require_once("sessions.php"); ?>
+<?php require_once("signup.php"); ?>
+<?php require_once("post_submit.php"); ?>
+<?php require_once("login.php"); ?>
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
@@ -15,7 +15,6 @@
         } else {
             $query = "SELECT * FROM posts ORDER BY id ASC";
         }
-        
     } else {
         $query = "SELECT * FROM posts ORDER BY id DESC";
     }
@@ -27,12 +26,19 @@
 ?>
 
 
-            
+
+<!doctype html>
+<html>
+    <head>
+        <title>Format Code</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+    </head>
+    
+        <div class="container">
             
             <?php if(isset($_SESSION["user"])) {?>
 
-            <div class="tweet_page">
-                
+            <body class="tweet_page">
                 <?php } else {?>
                         <div class="register-title"></p></div>
                         <div class="login_box">
@@ -55,8 +61,8 @@
                                       <input type="radio" name="gender" value="male" id="sex_m" class="register-switch-input">
                                       <label for="sex_m" class="register-switch-label">Male</label>
                                     </div>
-                                <input type="text" name="name" value="" placeholder="Name"/>
-                                <input type="password" name="password" value="" placeholder="Password"/>
+                                <input type="text" name="name" value="" placeholder="Name" pattern=".{5,}" required title="5 characters minimum"/>
+                                <input type="password" name="password" value="" placeholder="Password" pattern=".{7,}" required title="7 characters minimum"/>
                                 <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
                                 <input type="text" name="student_id" value="" placeholder="Student ID"/>
                                 <div class="dropdown">    
@@ -64,50 +70,17 @@
                                 </form>
 
                         </div>
-</div>
-</div>
-                <?php } ?>
-        
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Turtle Talks</a>
-    </div>
+                </body>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav nav-tabs" role="tablist">   
-        <li class="active"><a href="#">Home</a></li>
-          
-        
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          About <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Meet the team</a></li>
-            <li><a href="#">Bournmouth University</a></li>
-          </ul>
-        </li>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-                             <?php if(isset($_SESSION["user"])) {?> 
-                    <div class="">
-                        <div class="">
-                                <form class= "" method="link" action="logout.php">
-                                <input type="submit" value="Logout">
-                                </form>
-                                
+                <?php } ?>
+                <body class="login_page">
+                   <?php if(isset($_SESSION["user"])) {?> 
+                    <div class="box_tweet_gender">
+                        <div class="box_hello">
+                            <form class= "logout_button" method="link" action="logout.php">
+                            <input type="submit" value="Logout">
+                            </form>
+                        
                         <div class="delete_toggle">
                         <p>Delete Account</p>
                         </div>
@@ -129,22 +102,10 @@
                                             <option value="none">None</option>
                                             </select>
                         <input type="submit" name="submit" value="Submit" />
-                        
-                        <div class=""><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
-                        <form class="" action="index.php" method="post">
-                            What's up? <input type="text" name="tweet" value="" />
-                            <input type="submit" name="submit" value="Submit" />
+                        </div>
                         </form>
-                    </div>
                     <?php } ?>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-            
 
-            
-        
-        
                     <?php
                         $x = 1; 
                         while($row = mysqli_fetch_assoc($result)) {
@@ -157,15 +118,16 @@
                         }
                     ?>
 
-   
+    </body>
+</html>
+
 <?php
     mysqli_free_result($result);
     mysqli_close($connect);
 ?>
 
-
 <div class="footer">
-Copyright &copy; Turtletalks.com
+Copyright ©Turtletalks.com
 </div>
 
 
