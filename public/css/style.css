@@ -1,16 +1,16 @@
 .sign_up_box {
     color: #6c6c6c;
-    margin: 20px;
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
-    margin: 0 auto;
     width: 230px;
     padding: 20px;
     background: #f4f4f4;
     border-radius: 3px;
     -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+    top:40px;
+    margin: auto;
 }
 
 .login_box {
@@ -63,7 +63,31 @@
     text-decoration: none;
     margin-bottom: 10px;
     margin-left: 222px;
+}
 
+.delete_edit {
+    width: 100px;
+    height: 30px;
+    line-height: 25px;
+    cursor: pointer;
+    text-align: center;
+	background: #d1404b;
+	border: 1px solid #be3b45;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+    float: left;
+    margin-left: 5px;
+}
+
+.delete_edit:hover {
+    background: #ac323b;
 }
 
 .delete:hover {
@@ -73,7 +97,6 @@
 .delete_toggle {
     width: 180px;
     height: 50px;
-    
     cursor: pointer;
     text-align: center;
     line-height: 10px;
@@ -84,9 +107,8 @@
 	font-family: 'Exo', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
-    text-decoration: none;
     display: inline-block;
-     position: relative;
+    position: relative;
     left: 0px;
     top: 0px;
 }
@@ -95,25 +117,33 @@
     background: #ac323b;
 }
 
-
+.dropdown {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    font-size: 15px;
+    border: 1px solid white;
+    color: white;
+}
 
 .box_tweet_gender {
     color: white;
     margin: 20 auto;
     font-family:sans-serif;
     font-size: 20px;
-    position: fixed;
     background-color: #919191;
     width: 100%;
     z-index: 100;
     opacity: 0.8;
     top: 0;
+    position: fixed;
 }
 
 .box_tweet_gender_content {
     text-align: right;
     margin-right: 35px;
-    
+    display: inline-block;
+    float: right;
 }
 
 .box {
@@ -211,11 +241,11 @@
 
 .gender {
     float:left;
-    margin-top: 50px;
+    margin-top: 25px;
     font-size: 20px;
 }
 
-.tweet_gender_body {
+#place_delete_edit {
     width: 850px;
     height: 35px;
     text-align: center;
@@ -231,7 +261,7 @@
     background: linear-gradient(#a6bc00, #9eb400); /* Standard syntax (must be last) */
 }
 
-.tweet_gender_body2 {
+#place_delete_edit2 {
     width: 850px;
     height: 35px;
     text-align: center;
@@ -249,7 +279,7 @@
 
 .tweet {
     float:left;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 10px;
 }
 .comment_post {
@@ -299,9 +329,11 @@
 
 .login_page {
     background-image: url("../images/a1.jpg");
-    background-repeat: no-repeat;
     background-size: 100%;
-    background-origin: content-box 
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .tweet_page {
@@ -339,7 +371,7 @@ input[type="text"] {
 	padding: 4px;
     font-size: 20px;
     text-align: center;
-    color: #afc600;
+    color: #279000;
 }
 
 input[type="text"]:focus{
@@ -446,3 +478,4 @@ height:0px;
     position: fixed; 
     bottom: 20px;
 }
+
