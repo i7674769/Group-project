@@ -7,7 +7,12 @@
 #background {
     width: 955px;
     height: 116px;
-    background-image: url(images/turtle.png)
+    background-image: url(images/turtle.png);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    display: inline-block;
+    position: relative;
+    margin-top: 5px;    
     
 }
 
