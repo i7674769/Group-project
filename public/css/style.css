@@ -1,3 +1,84 @@
+#nav {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    background-image: url(images/turtle.png);
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.section1 {
+    width: 33%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #2c8f93 ;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -4px;
+}
+
+.section2 {
+    width: 33%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #cb0a37;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -4px;
+}
+
+.section3 {
+    width: 33%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #85c14a;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -4px;
+}
+
+.section1:hover {
+    opacity: 0.8;
+}
+
+.section2:hover {
+opacity: 0.8;}
+
+.section3:hover {
+    opacity: 0.8;
+}
+
 .sign_up_box {
     color: #6c6c6c;
     font-family: sans-serif;
@@ -60,15 +141,20 @@
 	font-family: 'Exo', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
-    text-decoration: none;
     margin-bottom: 10px;
     margin-left: 222px;
+    text-decoration:none;
+}
+
+.delete a {
+    text-decoration: none;
+    color: white;
 }
 
 .delete_edit {
     width: 100px;
     height: 30px;
-    line-height: 25px;
+    line-height: 30px;
     cursor: pointer;
     text-align: center;
 	background: #d1404b;
@@ -80,10 +166,16 @@
 	font-size: 15px;
 	font-weight: 500;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-top: 2px;
     overflow: hidden;
     float: left;
-    margin-left: 5px;
+    margin-left: 50px;
+    margin-right: -40px;
+}
+
+.delete_edit a {
+    text-decoration: none;
+    color: white;
 }
 
 .delete_edit:hover {
@@ -123,19 +215,20 @@
     background-color: transparent;
     font-size: 15px;
     border: 1px solid white;
-    color: white;
+    color:#279000;
 }
 
 .box_tweet_gender {
+    min-height: 70px;
     color: white;
-    margin: 20 auto;
+    margin: auto;
     font-family:sans-serif;
     font-size: 20px;
-    background-color: #919191;
+    background-color: #4F4F4F;;
     width: 100%;
     z-index: 100;
     opacity: 0.8;
-    top: 0;
+    top: 50px;
     position: fixed;
 }
 
@@ -144,16 +237,6 @@
     margin-right: 35px;
     display: inline-block;
     float: right;
-}
-
-.box {
-    background-color: white;
-    margin-bottom: 5px;
-    
-}
-
-.box_sort {
-    
 }
 
 .box_hello {
@@ -179,7 +262,7 @@
 }
 
 .box_tweet {
-    height: 150px;
+    height: 190px;
     width: 900px;
     background-color: #afc600;
     font-family: sans-serif;
@@ -187,13 +270,12 @@
     text-align: center;
     vertical-align: middle;
     color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     line-height: 40px;
     margin: 0 auto;
-    border-radius: 7px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: -65px;
+    margin-bottom: -70px;
     z-index: 0;
     overflow: auto;
     background: -webkit-linear-gradient(#afc600, #8c9f00); /* For Safari 5.1 to 6.0 */
@@ -202,28 +284,23 @@
     background: linear-gradient(#afc600, #8c9f00); /* Standard syntax (must be last) */
 }
 .box_tweet2 {
-    height: 150px;
+    height: 190px;
     width: 900px;
-    background-color: #162174;
+    background-color: #4F4F4F;;
     font-family: sans-serif;
     font-size: 20px;
     text-align: center;
     color: white;
     line-height: 40px;
-    opacity: 0.8;
+    opacity: 0.9;
     margin: 0 auto;
-    border-radius: 7px;
     -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     position: relative;
-    margin-top: 90px;
+    margin-top: 110px;
     z-index: 0;
     overflow: auto;
-    margin-bottom: 20px;
-    background: -webkit-linear-gradient(#27338d, #162174); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#27338d, #162174); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#27338d, #162174); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#27338d, #162174); /* Standard syntax (must be last) */
+    margin-bottom: -95px;
 }
 
 .time_ago {
@@ -249,7 +326,6 @@
     width: 850px;
     height: 35px;
     text-align: center;
-    border-radius: 7px;
     -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
@@ -271,10 +347,7 @@
     margin: 0 auto;
     margin-top: 12px;
     text-shadow: 1px 1px 1px #454e00;
-    background: -webkit-linear-gradient(#323c86, #0f1a72); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#1e297c, #0f1a72); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#1e297c, #0f1a72); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#323c86, #1e2980); /* Standard syntax (must be last) */
+    background-color: #4F4F4F;
 }
 
 .tweet {
@@ -312,23 +385,8 @@
     z-index: 3;
 }
 
-.dropdown select {
-    border: 0 !important;.  /*Removes border*/
-     -webkit-appearance: none;  /*Removes default chrome and safari style*/
-     -moz-appearance: none;  /*Removes default style Firefox*/
-    background-color: transparent;
-    height: 25px;
-    margin: 20px;
-    font-family: sans-serif;
-}
-
-.dropdown p {
-	display: inline-block;
-	font-weight: bold;
-}
-
 .login_page {
-    background-image: url("../images/a1.jpg");
+    background-image: url("../img/a1.jpg");
     background-size: 100%;
     background-repeat:no-repeat;
     background-size:cover;
@@ -337,10 +395,12 @@
 }
 
 .tweet_page {
-    background-color: #d6d6d4;
-    background-repeat: no-repeat;
     background-size: 100%;
-    background-origin: content-box 
+    background-color: #2c8f93;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
     
 }
 
@@ -398,7 +458,7 @@ input[type="submit"] {
 	border: 1px solid #fff;
 	cursor: pointer;
 	border-radius: 2px;
-	color: #30a305;
+	color: #85c14a;
 	font-family: 'Exo', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
@@ -465,12 +525,11 @@ input[type="submit"]:hover{
 }
 
 .register-title {
-    
     height:300px;
     width: 525px;
     line-height: 43px;
     margin: 50px auto 20px;
-    background-image: url(../images/logo.png24.png);
+    background-image: url(../img/logo.png24.png);
 }
 
 .footer {
@@ -478,4 +537,5 @@ height:0px;
     position: fixed; 
     bottom: 20px;
 }
+
 
