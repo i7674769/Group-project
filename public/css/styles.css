@@ -11,11 +11,11 @@
     position: relative;
     margin-top: 5px;    
     
-}*/
+}
 
 #body {
  background-color: #000
-}
+}*/ 
 
 #banner {
     width: 955px;
@@ -36,7 +36,73 @@
     padding: 5px;
 }
 
-.section {
+.section1 {
+    width: 33%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #2c8f93 ;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -4px;
+}
+
+.section2 {
+    width: 33%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #cb0a37;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -4px;
+}
+
+.section3 {
+    width: 33%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #85c14a;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -4px;
+}
+
+.section1:hover {
+    opacity: 0.8;
+}
+
+.section2:hover {
+    opacity: 0.8;
+}
+
+.section3:hover {
+    opacity: 0.8;
+}
+
+//*.section {
     width: 250px;
     height: 50px;
     cursor: pointer;
@@ -61,7 +127,7 @@
 .section:hover {
     background: #ffffff;
     color: #162174;
-}
+}*/
 
 
 .box {
@@ -84,7 +150,6 @@
     text-decoration: none;
     margin-left: 5px;
     background: linear-gradient(#afc600, #8c9f00);
-}
 }
 
 .box:hover {
