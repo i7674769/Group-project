@@ -5,7 +5,7 @@
     background-image: url(images/turtle.png);
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     position: fixed;
-    top: 0;
+    top: 0px;
     z-index: 100;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .section1 {
-    width: 33%;
+    width: 25%;
     height: 50px;
     cursor: pointer;
     text-align: center;
@@ -29,11 +29,11 @@
     position: relative;
     left: 0px;
     top: 0px;
-    margin-right: -4px;
+    margin-right: -5px;
 }
 
 .section2 {
-    width: 33%;
+    width: 25%;
     height: 50px;
     cursor: pointer;
     text-align: center;
@@ -47,11 +47,11 @@
     position: relative;
     left: 0px;
     top: 0px;
-    margin-right: -4px;
+    margin-right: -5px;
 }
 
 .section3 {
-    width: 33%;
+    width: 25%;
     height: 50px;
     cursor: pointer;
     text-align: center;
@@ -65,7 +65,25 @@
     position: relative;
     left: 0px;
     top: 0px;
-    margin-right: -4px;
+    margin-right: -5px;
+}
+
+.section4 {
+    width: 25%;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 10px;
+	background: #EF9A0E;
+	color: #fff;
+	font-family: 'Exo', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+    display: inline-block;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    margin-right: -5px;
 }
 
 .section1:hover {
@@ -76,6 +94,10 @@
 opacity: 0.8;}
 
 .section3:hover {
+    opacity: 0.8;
+}
+
+.section4:hover {
     opacity: 0.8;
 }
 
@@ -103,6 +125,17 @@ opacity: 0.8;}
     margin: 0 auto;
     width: 500px;
     border-radius: 3px;
+}
+
+.sort_place {
+    float: right;
+    margin-right: 100px;
+}
+
+.edit_post {
+    float:right;
+    margin-right: -150px;
+    margin-top: 100px;
 }
 
 .login_toggle {
@@ -218,6 +251,21 @@ opacity: 0.8;}
     color:#279000;
 }
 
+.search {
+    position: absolute;
+    margin: -100px 0 0 -200px;
+    top: 20%;
+    left: 50%;
+}
+
+
+.search p{
+    font-size: 130px;
+    font-family: sans-serif;
+    color: #cb0a37;
+    margin-bottom: 20px;
+}
+
 .box_tweet_gender {
     min-height: 70px;
     color: white;
@@ -227,7 +275,6 @@ opacity: 0.8;}
     background-color: #4F4F4F;;
     width: 100%;
     z-index: 100;
-    opacity: 0.8;
     top: 50px;
     position: fixed;
 }
@@ -261,28 +308,6 @@ opacity: 0.8;}
     font-size: 20px;
 }
 
-.box_tweet {
-    height: 190px;
-    width: 900px;
-    background-color: #afc600;
-    font-family: sans-serif;
-    font-size: 20px;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    opacity: 0.9;
-    line-height: 40px;
-    margin: 0 auto;
-    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-    margin-bottom: -70px;
-    z-index: 0;
-    overflow: auto;
-    background: -webkit-linear-gradient(#afc600, #8c9f00); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#afc600, #8c9f00); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#afc600, #8c9f00); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#afc600, #8c9f00); /* Standard syntax (must be last) */
-}
 .box_tweet2 {
     height: 190px;
     width: 900px;
@@ -297,10 +322,28 @@ opacity: 0.8;}
     -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     position: relative;
-    margin-top: 110px;
+    margin-top: 135px;
     z-index: 0;
     overflow: auto;
-    margin-bottom: -95px;
+    margin-bottom: -120px;
+}
+
+.search_page {
+    background-size: 100%;
+    background-color: #85c14a;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.filter_page {
+    background-size: 100%;
+    background-color: #EF9A0E;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .time_ago {
@@ -537,5 +580,4 @@ height:0px;
     position: fixed; 
     bottom: 20px;
 }
-
 
