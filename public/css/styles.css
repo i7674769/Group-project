@@ -150,10 +150,18 @@
     text-decoration: none;
     margin-left: 5px;
     background: linear-gradient(#656565, #2a2a2a);
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 }
 
 .box:hover {
     background: #5d5d5d;
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+   -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 }
 
 #footer {
