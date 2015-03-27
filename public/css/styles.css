@@ -1,7 +1,11 @@
+body {
+        background-color: #cb0a37;
+}
+
 #container {
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
+    background-color: #cb0a37;
 }
 
 /*#background {
@@ -34,7 +38,7 @@
     background-color: #ffffff;
     float: left;
     padding: 5px;
-}*/
+
 
 .section1 {
     width: 33%;
@@ -149,19 +153,19 @@
 	font-weight: 700;
     text-decoration: none;
     margin-left: 5px;
-    background: linear-gradient(#656565, #2a2a2a);
-    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-   -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-     -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+    background: linear-gradient(#818181, #262626);
+-webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+   -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+        transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
 }
 
 .box:hover {
-    background: #5d5d5d;
-    -webkit-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-   -moz-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-     -o-transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-        transition: all 500ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+    background: #4d4d4d;
+-webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+   -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+     -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
+        transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
 
 #footer {
