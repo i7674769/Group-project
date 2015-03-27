@@ -47,7 +47,7 @@ body {
 }
 
 
-.box1 {
+.box {
     width: 220px;
     height: 250px;
     background-color: #4F4F4F;
@@ -73,7 +73,7 @@ body {
         transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
 }
 
-.box1:hover {
+.box:hover {
     background: #4d4d4d;
 -webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
    -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
@@ -81,15 +81,15 @@ body {
         transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
 
-.box2 {
-    width: 220px;
-    height: 250px;
+.infobox {
+    width: 900px;
+    height: 300px;
     background-color: #4F4F4F;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.9);
     margin-left: 0px;
     margin: 5px 5px 5px 5px;
     padding-top: 10px;
-    display: inline-block;
+    display: block;
     text-align: center;
     line-height: 50px;
 	border: 1px solid #333232;
@@ -99,41 +99,7 @@ body {
 	font-size: 20px;
 	font-weight: 700;
     text-decoration: none;
-    margin-left: 5px;
-    background: linear-gradient(#818181, #262626);
--webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-   -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-     -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-        transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-}
-
-.box2:hover {
-    background: #4d4d4d;
--webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-   -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-     -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-        transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
-}
-
-.box3 {
-    width: 220px;
-    height: 250px;
-    background-color: #4F4F4F;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
     margin-left: 0px;
-    margin: 5px 5px 5px 5px;
-    padding-top: 10px;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
-	border: 1px solid #333232;
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-    text-decoration: none;
-    margin-left: 5px;
     background: linear-gradient(#818181, #262626);
 -webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
    -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
@@ -141,46 +107,13 @@ body {
         transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
 }
 
-.box3:hover {
+.infobox:hover {
     background: #4d4d4d;
 -webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
    -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
      -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
         transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
-
-.box4 {
-    width: 220px;
-    height: 250px;
-    background-color: #4F4F4F;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
-    margin-left: 0px;
-    margin: 5px 5px 5px 5px;
-    padding-top: 10px;
-    display: inline-block;
-    text-align: center;
-    line-height: 50px;
-	border: 1px solid #333232;
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Exo', sans-serif;
-	font-size: 20px;
-	font-weight: 700;
-    text-decoration: none;
-    margin-left: 5px;
-    background: linear-gradient(#818181, #262626);
--webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-   -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-     -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-        transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-}
-
-.box4:hover {
-    background: #4d4d4d;
--webkit-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-   -moz-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-     -o-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); 
-        transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);
 }
 
 #button {
