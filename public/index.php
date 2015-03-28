@@ -16,7 +16,12 @@
             $query = "SELECT * FROM posts ORDER BY id ASC";
         }
     } else {
-        $query = "SELECT * FROM posts ORDER BY id DESC";
+        if(isset($_POST["search"])) {
+            $searchTerm = $_POST["search"];
+            $query = "SELECT * FROM posts WHERE tweet LIKE '%{$searchTerm}%' ORDER BY id DESC";
+        } else {
+            $query = "SELECT * FROM posts ORDER BY id DESC";
+        }
     }
 
     $result = mysqli_query($connect, $query); 
@@ -32,6 +37,7 @@
     <head>
         <title>Format Code</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
     
         <div class="container">
@@ -61,10 +67,9 @@
                                       <input type="radio" name="gender" value="male" id="sex_m" class="register-switch-input">
                                       <label for="sex_m" class="register-switch-label">Male</label>
                                 </div>
-                                <input type="text" name="name" value="" placeholder="Name" pattern=".{5,}" required title="5 characters minimum"/>
+                                <input type="text" name="name" value="" placeholder="Name"/>
                                 <input type="password" name="password" value="" placeholder="Password" pattern=".{7,}" required title="7 characters minimum"/>
                                 <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
-                                <input type="text" name="email" value="" placeholder="E-Mail"/>
                                 <input type="text" name="student_id" value="" placeholder="Student ID" pattern=".{7,}" required title="7 characters minimum"/>
                                 <div class="dropdown">    
                                     <input type="submit" name="signup" value="Sign up!"/> </p> 
@@ -78,22 +83,26 @@
                    <?php if(isset($_SESSION["user"])) {?>
                 
                     <div id="nav">
+                        <a href="">
                             <div class="section1">
-                                <a href="">
-                                    <p>Home</p>
-                                </a>
-                            </div>           
+                                    <img class="turtle" src="img/turtle01.png">
+                            </div>   
+                        </a>
+                        <a href="aboutus.php"> 
                             <div class="section2">
-                                <a href=""> 
-                                    <p>About</p>
-                                </a>
+                                <p>About</p>
                             </div>
-                        
+                         </a>
+                        <a href="search.php">
                             <div class="section3">
-                                <a href="">
                                     <p>Search</p>
-                                </a>
                             </div>
+                        </a>
+                        <a href="filter.php">
+                            <div class="section4">
+                                    <p>Filter</p>
+                            </div>
+                        </a>
                     </div>
                     
                     <div class="box_tweet_gender">
@@ -111,13 +120,13 @@
                         </div>
                         <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
                         <form class="box_tweet_gender_content" action="index.php" method="post">
-                            What's up? <input type="text" name="tweet" value="" />
+                            What's up? <input type="text" name="tweet" value="" placeholder="..max 1000 characters" pattern=".{,1000}" required title="1000 characters maximum" />
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
-                                            <option value="talbot campus">Talbot Campus</option>
-                                            <option value="landsdowm campus">Landsdown Campus</option>
+                                            <option value="talbot_campus">Talbot Campus</option>
+                                            <option value="landsdowm_campus">Landsdown Campus</option>
                                             <option value="halls">Halls</option>
-                                            <option value="private accommodation">Private Accommodation</option>
+                                            <option value="private_accommodation">Private Accommodation</option>
                                             <option value="unilet">Unilet</option>
                                             <option value="town">Town</option>
                                             <option value="none">None</option>
@@ -144,7 +153,5 @@
 <div class="footer">
 Copyright ©Turtletalks.com
 </div>
-
-
 
 <?php include_once("../includes/templates/footer.php"); ?> 
