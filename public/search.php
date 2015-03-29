@@ -8,16 +8,15 @@
 
 <?php
 $output='';
-
 if(isset($_GET["search"])) {
     $searchq= $_GET["search"];
    
     $query = mysql_query("SELECT * FROM posts WHERE firstname LIKE '%{$_GET["$searchq"]}%' OR lastname LIKE '%{$_GET["$searchq"]}%'") or die("could not search!");
     
     $count= mysql_num_rows($query);
-    if($count==0){
+    if ($count==0){
         $output = 'There was no search results!';
-    }else{
+    } else {
             while ($row=mysql_fetch_array($query)) {
                 $id = $row['id'];
                 $user_id =$row['user_id'];
@@ -30,40 +29,8 @@ if(isset($_GET["search"])) {
     }
     }
 }
-
-
-
-
-
 ?>
-<!DOCTYPE html>
 
-<html>
+<?php print("$output");?>
 
-<head>
-    
-    <title>Search</title>
-    
-    </head>
-    
-<body>
-
-
-
-<form action="index.php" method="post">
-    
-    <input type="text" name="search" placeholder="Search for posts..."/>
-           <input type="submit" value=">>" />
-    
-    
-    
-    
-    </form>
-    <?php print("$output");?>
-
-
-
-    
-    
-</body>
-</html>
+<?php include_once("../includes/templates/footer.php"); ?> 
