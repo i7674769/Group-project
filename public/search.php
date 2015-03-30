@@ -1,11 +1,3 @@
-<?php require_once("../includes/sessions.php"); ?>
-<?php require_once("signup.php"); ?>
-<?php require_once("post_submit.php"); ?>
-<?php require_once("login.php"); ?>
-<?php require_once("../includes/connect.php"); ?>
-<?php require_once("../includes/functions.php"); ?>
-<?php include_once("../includes/templates/header.php"); ?>
-
 <?php
 $output='';
 if(isset($_GET["search"])) {
@@ -33,4 +25,3 @@ if(isset($_GET["search"])) {
 
 <?php print("$output");?>
 
-<?php include_once("../includes/templates/footer.php"); ?> 
