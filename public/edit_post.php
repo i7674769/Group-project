@@ -9,14 +9,14 @@
         $postID = $_GET["id"]; 
             
             if (isset($_POST["new_post"])){
-                $new_tweet = $_POST["new_tweet"];
+                $new_post = $_POST["new_post"];
 
-                $query = "UPDATE FROM posts WHERE id = '{$postID}' SET tweet = '{$new_tweet}'";
+                $query = "UPDATE FROM posts WHERE id = '{$postID}' SET post = '{$new_post}'";
                 $result = mysqli_query($connect, $query); 
             } else {
                 echo "This is not working, Darlene!";
             }
-        $new_tweet = "";
+        $new_post = "";
         }
     
     header('Location: index.php');
