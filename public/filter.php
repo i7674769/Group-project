@@ -28,7 +28,7 @@
                             </div>
 
                             <div class="section3">
-                                <a href="search.php">
+                                <a href="search_page.php">
                                     <p>Search</p>
                                 </a>
                             </div>
@@ -86,6 +86,10 @@ Only show posts from: <select name="sort" class="dropdown">
                                 include 'box2.php';
                             }
                     ?>
+            <div class="footer">
+                Copyright ©Turtletalks.com 
+            </div>
+
 
     </body>
     </html>
