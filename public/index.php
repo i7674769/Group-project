@@ -68,9 +68,9 @@
                                       <label for="sex_m" class="register-switch-label">Male</label>
                                 </div>
                                 <input type="text" name="name" value="" placeholder="Name"/>
-                                <input type="password" name="password" value="" placeholder="Password" pattern=".{7,}" required title="7 characters minimum"/>
+                                <input type="password" name="password" value="" placeholder="Password" pattern="(?=.*\d).{8,}" title="Must contain at least one number.">
                                 <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
-                                <input type="text" name="student_id" value="" placeholder="Student ID" pattern=".{7,}" required title="7 characters minimum"/>
+                                <input type="text" name="student_id" value="" placeholder="Student ID" pattern="[0-9].{6,}" required title="7 characters minimum and only numbers are allowed."/>
                                 <div class="dropdown">    
                                     <input type="submit" name="signup" value="Sign up!"/> </p> 
                                 </form>
@@ -120,7 +120,7 @@
                         </div>
                         <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
                         <form class="box_tweet_gender_content" action="index.php" method="post">
-                            What's up? <input type="text" name="tweet" value="" placeholder="..max 1000 characters" pattern=".{,1000}" required title="1000 characters maximum" />
+                            What's up? <input type="text" name="tweet" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
                                             <option value="talbot_campus">Talbot Campus</option>
