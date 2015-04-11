@@ -123,10 +123,10 @@
                             What's up? <input type="text" name="tweet" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
-                                            <option value="talbot_campus">Talbot Campus</option>
-                                            <option value="landsdowm_campus">Landsdown Campus</option>
+                                            <option value="talbot campus">Talbot Campus</option>
+                                            <option value="landsdowm campus">Landsdown Campus</option>
                                             <option value="halls">Halls</option>
-                                            <option value="private_accommodation">Private Accommodation</option>
+                                            <option value="private accommodation">Private Accommodation</option>
                                             <option value="unilet">Unilet</option>
                                             <option value="town">Town</option>
                                             <option value="none">None</option>
