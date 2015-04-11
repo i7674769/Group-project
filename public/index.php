@@ -67,8 +67,8 @@
                                       <input type="radio" name="gender" value="male" id="sex_m" class="register-switch-input">
                                       <label for="sex_m" class="register-switch-label">Male</label>
                                 </div>
-                                <input type="text" name="name" value="" placeholder="Name"/>
-                                <input type="password" name="password" value="" placeholder="Password" pattern="(?=.*\d).{8,}" title="Must contain at least one number.">
+                                <input type="text" name="name" value="" placeholder="Name" pattern="{1,}" required title="Please enter a name."/>
+                                <input type="password" name="password" value="" placeholder="Password" pattern="(?=.*\d).{8,}" required title="Must contain at least one number.">
                                 <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
                                 <input type="text" name="student_id" value="" placeholder="Student ID" pattern="[0-9].{6,}" required title="7 characters minimum and only numbers are allowed."/>
                                 <div class="dropdown">    
