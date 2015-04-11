@@ -1,3 +1,4 @@
+<!--Including several files into the index file using a php function. 'Require once' checks if the file has already been included and in case it has, it will not include it a second time.--> 
 <?php require_once("../includes/sessions.php"); ?>
 <?php require_once("signup.php"); ?>
 <?php require_once("post_submit.php"); ?>
@@ -39,49 +40,9 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
-    
-        <div class="container">
-            
-            <?php if(isset($_SESSION["user"])) {?>
 
-            <body class="post_page">
-                <?php } else {?>
-                        <div class="register-title"></p></div>
-                        <div class="login_box">
-                            <form action="index.php" method="post" autocomplete="off">
-                                <input type="text" name="name" value="" placeholder="Name"/>
-                                <input type="password" name="password" value="" placeholder="Password"/>
-                                <input type="submit" name="login" value="Login" /></p>
-                            </form> </div>
-
-                        <div class="login_toggle">
-                        <p> No account?</p>
-                        </div>
-
-                         <div class="sign_up_box">   
-                                <p>No account? Sign up.</p>
-                                <form action="index.php" method="post" autocomplete="off">
-                                <div class="register-switch">
-                                      <input type="radio" name="gender" value="female" id="sex_f" class="register-switch-input" checked>
-                                      <label for="sex_f" class="register-switch-label">Female</label>
-                                      <input type="radio" name="gender" value="male" id="sex_m" class="register-switch-input">
-                                      <label for="sex_m" class="register-switch-label">Male</label>
-                                </div>
-                                <input type="text" name="name" value="" placeholder="Name" pattern="{1,}" required title="Please enter a name."/>
-                                <input type="password" name="password" value="" placeholder="Password" pattern="(?=.*\d).{8,}" required title="Must contain at least one number.">
-                                <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
-                                <input type="text" name="student_id" value="" placeholder="Student ID" pattern="[0-9].{6,}" required title="7 characters minimum and only numbers are allowed."/>
-                                <div class="dropdown">    
-                                    <input type="submit" name="signup" value="Sign up!"/> </p> 
-                                </form>
-
-                        </div>
-                </body>
-
-                <?php } ?>
-                <body class="login_page">
-                   <?php if(isset($_SESSION["user"])) {?>
-                
+            <?php if(isset($_SESSION["user"])) {?> 
+            <!--An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page.-->
                     <div id="nav">
                         <a href="">
                             <div class="section1">
@@ -118,8 +79,10 @@
                         <div class="delete"><a href="delete.php?id=<?php echo $_SESSION["user_id"] ?>">Sure?</a></div>
                          
                         </div>
+                        <!--To adress the user logged in, the name saved as session variable is displayed.-->
                         <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
                         <form class="box_post_gender_content" action="index.php" method="post">
+                            <!-- The following Attribute 'pattern' is used to validate the input and set a min/max of allowed characters.-->
                             What's up? <input type="text" name="post" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
@@ -134,24 +97,57 @@
                         <input type="submit" name="submit" value="Submit" />
                         </div>
                         </form>
-                    <?php } ?>
+    
+                        <div class="footer">
+                            Copyright ©Turtletalks.com 
+                        </div>
 
+            <body class="post_page">
+                <?php } else {?>
+                <!--In case the session was not started, the following content is displayed (login/signup_page).-->
+                        <div class="register-title"></p></div>
+                        <div class="login_box">
+                            <form action="index.php" method="post" autocomplete="off">
+                                <input type="text" name="name" value="" placeholder="Name"/>
+                                <input type="password" name="password" value="" placeholder="Password"/>
+                                <input type="submit" name="login" value="Login" /></p>
+                            </form> </div>
+
+                        <div class="login_toggle">
+                        <p> No account?</p>
+                        </div>
+
+                         <div class="sign_up_box">   
+                                <p>No account? Sign up.</p>
+                                <form action="index.php" method="post" autocomplete="off">
+                                
+                                <div class="register-switch">
+                                      <input type="radio" name="gender" value="female" id="sex_f" class="register-switch-input" checked>
+                                      <label for="sex_f" class="register-switch-label">Female</label>
+                                      <input type="radio" name="gender" value="male" id="sex_m" class="register-switch-input">
+                                      <label for="sex_m" class="register-switch-label">Male</label>
+                                </div>
+                                <input type="text" name="name" value="" placeholder="Name" pattern="{1,}" required title="Please enter a name."/>
+                                <!-- The following Attribute 'pattern' is used to validate the input.-->
+                                <input type="password" name="password" value="" placeholder="Password" pattern="(?=.*\d).{8,}" required title="Must contain at least one number.">
+                                <input type="password" name="confirm_password" value="" placeholder="Confirm Password"/>
+                                <!-- The following Attribute 'pattern' is used to validate the input.-->
+                                <input type="text" name="student_id" value="" placeholder="Student ID" pattern="[0-9].{6,}" required title="7 characters minimum and only numbers are allowed."/>
+                                <div class="dropdown">    
+                                    <input type="submit" name="signup" value="Sign up!"/> </p> 
+                                </form>
+                        </div>
+                <?php } ?>
+
+                  <!-- The while loop is used to include the file box2.php each time the user creates a new post. This way, the posts will be displayed. -->
                     <?php
                         while($row = mysqli_fetch_assoc($result)) {
                                 include 'box2.php';
                             }
                     ?>
 
-    </body>
+
 </html>
 
-<?php
-    mysqli_free_result($result);
-    mysqli_close($connect);
-?>
-
-<div class="footer">
-Copyright ©Turtletalks.com
-</div>
-
+<!--Including the file footer.php. 'Require once' checks if the file has already been included and in case it has, it will not include it a second time.--> 
 <?php include_once("../includes/templates/footer.php"); ?> 
