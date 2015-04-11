@@ -15,6 +15,7 @@
     </head>
     <body>
                 <?php if(isset($_SESSION["user"])) {?>
+                <!--An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page.-->
                     <div id="nav">
                             <div class="section1">
                                 <a href="index.php">
@@ -40,19 +41,18 @@
                             </div>
                     </div>
         
-        <div class="box_post_gender">
+                    <div class="box_post_gender">
                         <div class="box_hello">
                             <form class= "logout_button" method="link" action="logout.php">
-                            <input type="submit" value="Logout">
+                                <input type="submit" value="Logout">
                             </form>
 
                         <div class="delete_toggle">
-                        <p>Delete Account</p>
+                            <p>Delete Account</p>
                         </div>
                         <div class="delete"><a href="delete.php?id=<?php echo $_SESSION["user_id"] ?>">Sure?</a></div>
                         </div>
                         <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
-
                     </div>
                     <?php } ?>
         
@@ -92,9 +92,10 @@
                         </div>
                     </div>   
                 </div>
-                    <div id="footer" style="height: 0px; position: fixed; bottom: 20px;">
-                    Copyright © Turtletalks.com
+                <div class="footer">
+                        Copyright ©Turtletalks.com 
                 </div>
+
         </div>
     </body>
 </html>
