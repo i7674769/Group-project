@@ -17,7 +17,7 @@
 
         <!--If-statement to make sure users can only delete their own posts. -->
         <?php if ($_SESSION["user_id"]==$row["user_id"]){  //Check if the user_id saved as a session variable is the same as user_id in table. ?>
-            <div class="delete_edit" id="delete_post"><a href="delete_post.php?id=<?php echo $row["id"]; //passing post_id as URL parameter ?>">Delete post?</a></div>
+            <div class="delete_edit" id="delete_post"><a href="delete_post.php?id=<?php echo $row["id"]; //Passing post_id as URL parameter. ?>">Delete post?</a></div>
         <?php } ?>
     </div>
         <div class="post" <p><?php echo ucfirst($row["post"]); //The first character is displayed capital. ?></p> </div>
