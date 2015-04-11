@@ -41,8 +41,8 @@
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
 
-            <?php if(isset($_SESSION["user"])) {?> 
-            <!--An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page.-->
+            <?php if(isset($_SESSION["user"])){ //An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page. ?>
+                    
                     <div id="nav">
                         <a href="">
                             <div class="section1">
@@ -79,8 +79,7 @@
                         <div class="delete"><a href="delete.php?id=<?php echo $_SESSION["user_id"] ?>">Sure?</a></div>
                          
                         </div>
-                        <!--To adress the user logged in, the name saved as session variable is displayed.-->
-                        <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
+                        <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); //To adress the user logged in, the name saved as session variable is displayed. ?>! </a></div>
                         <form class="box_post_gender_content" action="index.php" method="post">
                             <!-- The following Attribute 'pattern' is used to validate the input and set a min/max of allowed characters.-->
                             What's up? <input type="text" name="post" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
@@ -139,10 +138,9 @@
                         </div>
                 <?php } ?>
 
-                  <!-- The while loop is used to include the file box2.php each time the user creates a new post. This way, the posts will be displayed. -->
                     <?php
-                        while($row = mysqli_fetch_assoc($result)) {
-                                include 'box2.php';
+                        while($row = mysqli_fetch_assoc($result)) { 
+                                include 'box2.php'; //The while loop is used to include the file box2.php each time the user creates a new post. This way, the posts will be displayed.
                             }
                     ?>
 
