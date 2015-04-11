@@ -4,9 +4,9 @@
 
 <?php     
     if(isset($_POST["submit"])) {
-        $tweet = ucfirst($_POST["tweet"]);
+        $post = ucfirst($_POST["post"]);
     } else {
-        $tweet = ""; 
+        $post = ""; 
     }
     if(isset($_POST["login"])) {
         $name = $_POST["name"];
