@@ -15,11 +15,13 @@
         //originally used for checking if all the fields were empty but we switched to another form of validation
         
         if(empty($confirm_password)) {
-            $message = "Please enter password again. ";
-            echo '<div class="message">'.$message.'</div>';
+            echo '<script type="text/javascript" language="Javascript">  
+            alert("Please enter password again!") 
+            </script>'; 
         } else if ($password != $confirm_password) {
-            $message = "Passwords do not match. ";
-            echo '<div class="message">'.$message.'</div>';
+            echo '<script type="text/javascript" language="Javascript">  
+            alert("Passwords do not match!") 
+            </script>';
         } else {
             $query = "INSERT INTO users (name, password, student_id, gender) VALUES ('{$name}', '{$password}', '{$student_id}','{$gender}')";
             $result = mysqli_query($connect, $query); 
