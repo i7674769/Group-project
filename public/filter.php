@@ -71,7 +71,7 @@ Only show posts from: <select name="sort" class="dropdown">
                     <?php } ?>
 
                     <?php
-                        if(isset($_POST['sort'])) { //Only if the button above is submitted.
+                        if(isset($_POST['sort'])) { //Only if the form above is submitted.
                             $sort = $_POST['sort']; //Declaring the variable $sort.
                             $query = "SELECT * FROM posts WHERE place_of_post='{$sort}'"; //Query to get all the results for the selected place. 
                         } else {
