@@ -18,7 +18,7 @@
     } else {
         if(isset($_POST["search"])) {
             $searchTerm = $_POST["search"];
-            $query = "SELECT * FROM posts WHERE tweet LIKE '%{$searchTerm}%' ORDER BY id DESC";
+            $query = "SELECT * FROM posts WHERE post LIKE '%{$searchTerm}%' ORDER BY id DESC";
         } else {
             $query = "SELECT * FROM posts ORDER BY id DESC";
         }
@@ -44,7 +44,7 @@
             
             <?php if(isset($_SESSION["user"])) {?>
 
-            <body class="tweet_page">
+            <body class="post_page">
                 <?php } else {?>
                         <div class="register-title"></p></div>
                         <div class="login_box">
@@ -105,7 +105,7 @@
                         </a>
                     </div>
                     
-                    <div class="box_tweet_gender">
+                    <div class="box_post_gender">
                         <div class="box_hello">
                             <form class= "logout_button" method="link" action="logout.php">
                             <input type="submit" value="Logout">
@@ -119,8 +119,8 @@
                          
                         </div>
                         <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); ?>! </a></div>
-                        <form class="box_tweet_gender_content" action="index.php" method="post">
-                            What's up? <input type="text" name="tweet" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
+                        <form class="box_post_gender_content" action="index.php" method="post">
+                            What's up? <input type="text" name="post" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
                                             <option value="talbot campus">Talbot Campus</option>
