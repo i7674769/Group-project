@@ -54,7 +54,7 @@
                                 <p>About</p>
                             </div>
                          </a>
-                        <a href="search.php">
+                        <a href="search_page.php">
                             <div class="section3">
                                     <p>Search</p>
                             </div>
