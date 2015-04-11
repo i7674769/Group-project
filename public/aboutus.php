@@ -40,7 +40,7 @@
                             </div>
                     </div>
         
-        <div class="box_tweet_gender">
+        <div class="box_post_gender">
                         <div class="box_hello">
                             <form class= "logout_button" method="link" action="logout.php">
                             <input type="submit" value="Logout">
