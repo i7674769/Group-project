@@ -10,35 +10,33 @@
 <!doctype html>
 <html>
     <head>
-        <title>Format Code</title>
+        <title>Filter</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
         <body class="filter_page">
                    <?php if(isset($_SESSION["user"])){ //An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page. ?>
                     
                     <div id="nav">
+                        <a href="index.php">
                             <div class="section1">
-                                <a href="index.php">
-                                    <img class="turtle" src="img/turtle01.png">
-                                </a>
-                            </div>
+                                <img class="turtle" src="img/turtle01.png">
+                            </div>   
+                        </a>
+                        <a href="aboutus.php"> 
                             <div class="section2">
-                                <a href="aboutus.php">
-                                    <p>About</p>
-                                </a>
+                                <p>About</p>
                             </div>
-
+                         </a>
+                        <a href="search_page.php">
                             <div class="section3">
-                                <a href="search_page.php">
                                     <p>Search</p>
-                                </a>
                             </div>
-
+                        </a>
+                        <a href="filter.php">
                             <div class="section4">
-                                <a href="filter.php">
                                     <p>Filter</p>
-                                </a>
                             </div>
+                        </a>
                     </div>
 
                     <div class="box_post_gender">
