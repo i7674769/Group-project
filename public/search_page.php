@@ -13,31 +13,28 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
         <body class="search_page">
-                   <?php if(isset($_SESSION["user"])) {?>
-                
+                <?php if(isset($_SESSION["user"])) {?>
                     <div id="nav">
+                        <a href="index.php">
                             <div class="section1">
-                                <a href="index.php">
-                                    <img class="turtle" src="img/turtle01.png">
-                                </a>
-                            </div>           
+                                <img class="turtle" src="img/turtle01.png">
+                            </div>   
+                        </a>
+                        <a href="aboutus.php"> 
                             <div class="section2">
-                                <a href="aboutus.php"> 
-                                    <p>About</p>
-                                </a>
+                                <p>About</p>
                             </div>
-                        
+                         </a>
+                        <a href="search_page.php">
                             <div class="section3">
-                                <a href="search.php">
                                     <p>Search</p>
-                                </a>
                             </div>
-                        
+                        </a>
+                        <a href="filter.php">
                             <div class="section4">
-                                <a href="filter.php">
                                     <p>Filter</p>
-                                </a>
                             </div>
+                        </a>
                     </div>
                     
                     <div class="box_post_gender">
@@ -62,9 +59,11 @@
                         <p>Search</p><input type="text" name="search" placeholder="Search by words..." pattern="[^'\x22]+" title="Invalid input">
                         <input type="submit" value="Go!" />
                     </form>
-    
-                    <?php } ?>
-
+                <?php } ?>
+            
+            <div class="footer">
+                Copyright ©Turtletalks.com 
+            </div>
     </body>
 </html>
 
