@@ -7,37 +7,36 @@
 <?php include_once("../includes/templates/header.php"); ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
             <title>Turtle Talks</title>
+            <link rel="stylesheet" href="css/styles.css" type="text/css"/>
             <link rel="stylesheet" href="css/style.css" type="text/css"/>
     </head>
     <body>
                 <?php if(isset($_SESSION["user"])) {?>
                 <!--An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page.-->
                     <div id="nav">
+                        <a href="index.php">
                             <div class="section1">
-                                <a href="index.php">
-                                    <img class="turtle" src="img/turtle01.png">
-                                </a>
-                            </div>
+                                <img class="turtle" src="img/turtle01.png">
+                            </div>   
+                        </a>
+                        <a href="aboutus.php"> 
                             <div class="section2">
-                                <a href="aboutus.php">
-                                    <p>About</p>
-                                </a>
+                                <p>About</p>
                             </div>
-
+                         </a>
+                        <a href="search_page.php">
                             <div class="section3">
-                                <a href="search_page.php">
                                     <p>Search</p>
-                                </a>
                             </div>
-
+                        </a>
+                        <a href="filter.php">
                             <div class="section4">
-                                <a href="filter.php">
                                     <p>Filter</p>
-                                </a>
                             </div>
+                        </a>
                     </div>
         
                     <div class="box_post_gender">
@@ -56,28 +55,28 @@
                     <?php } ?>
         
         <div id="body">
-                <div id="container">
                     <div align="center">
-                        <img src="images/turtletalk.png" style="width: 900px; height: 150x; display: inline; margin-bottom: 5px">
-                        <div id="banner">  
+                        <img src="img/turtletalk.png" style="width: 900px; height: 150x; display: inline; margin-bottom: 5px">
+                    <div id="banner">  
+                        <img src="img/turtle.png">
                     </div>
                     <div class="box">
-                        <img src="images/Darlene.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
+                        <img src="img/Darlene.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
                     <h1>Darlene Büttner</h1>
                         <p><a class="box1" href="http://www.darlenebuttner.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                     </div>      
                     <div class="box">
-                        <img src="images/bex.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
+                        <img src="img/bex.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
                     <h1>Rebecca Hughes</h1>
                         <p><a class="box1" href="http://www.beckyhughes94.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                     </div>
                     <div class="box">                
-                        <img src="images/tina.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
+                        <img src="img/tina.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
                     <h1>Christina Sabine</h1>
                     <p><a class="box1" href="http://www.christinasabine.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
         </div>
                     <div class="box">
-                        <img src="images/rafiel.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
+                        <img src="img/rafiel.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
                     <h1>Israfiél Négasi</h1>
                         <p><a class="box1" href="http://www.rafielnegasi.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                         </div>
@@ -88,8 +87,7 @@
                 <p>__________________________________________________________ </p>
                 <p>“This Page is so you have your own freedom to talk about your views and ideas, If for any reason you show harm or offence to yourself or anybody else’s safety or well-being your information will be disclosed and used to know the identify of yourself, but only to the admins will be aware of this information. Besides from this your information is completely safe and not be displayed to the public”.</p>
                             <p>___</p>
-                        </div>
-                    </div>   
+                        </div>  
                 </div>
                 <div class="footer">
                         Copyright ©Turtletalks.com 
