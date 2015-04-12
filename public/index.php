@@ -43,7 +43,7 @@
             <?php if(isset($_SESSION["user"])){ //An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page. ?>
                 <body class="post_page">
                     <div id="nav">
-                        <a href="">
+                        <a href="index.php">
                             <div class="section1">
                                 <img class="turtle" src="img/turtle01.png">
                             </div>   
