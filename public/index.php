@@ -40,10 +40,11 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link href="css/styles.css" rel="stylesheet" type="text/css">
     </head>
-
+    
+        <div class="login_page">
             <?php if(isset($_SESSION["user"])){ //An if-statement is used here to make sure the following content is only displayed once the session has started. This seperated the login_page and the sign_up page. ?>
-                    
-                    <div id="nav">
+                
+                    <body id="nav">
                         <a href="">
                             <div class="section1">
                                     <img class="turtle" src="img/turtle01.png">
@@ -65,7 +66,8 @@
                             </div>
                         </a>
                     </div>
-                    
+    
+                
                     <div class="box_post_gender">
                         <div class="box_hello">
                             <form class= "logout_button" method="link" action="logout.php">
@@ -100,6 +102,7 @@
                         <div class="footer">
                             Copyright ©Turtletalks.com 
                         </div>
+                    </body>
 
             <body class="post_page">
                 <?php } else {?>
