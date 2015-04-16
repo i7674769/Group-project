@@ -78,7 +78,7 @@
                         <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); //To adress the user logged in, the name saved as session variable is displayed. ?>! </a></div>
                         <form class="box_post_gender_content" action="index.php" method="post">
                             <!-- The following Attribute 'pattern' is used to validate the input and set a min/max of allowed characters.-->
-                            What's up? <input type="text" name="post" value="" pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
+                            What's up? <input type="text" name="post" value="" placeholder="Max 1000 words.." pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
                                             <option value="talbot campus">Talbot Campus</option>
@@ -104,7 +104,7 @@
                             <div class="register-title"></p></div>
                             <div class="login_box">
                                 <form action="index.php" method="post" autocomplete="off">
-                                    <input type="text" name="name" value="" placeholder="Name"/>
+                                    <input type="text" name="student_id" value="" placeholder="Student ID"/>
                                     <input type="password" name="password" value="" placeholder="Password"/>
                                     <input type="submit" name="login" value="Login" /></p>
                                 </form> </div>
