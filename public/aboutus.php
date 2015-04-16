@@ -85,7 +85,7 @@
                             <p>___</p>
                 <p>Hello There! and Welcome to TURTLE TALKS! Make yourself feel at home and kick back and just relax! This website is made for Bournemouth University Students to express themself freely due to all posts on this website are anonymous. You can express your ideas, experiences and views about anything you like while in uni and also at home anonymously to over peers here at Bournemouth University. This site is so you can freely post what you wish without the theat of other people knowing who has posed it...</p>         
                 <p>__________________________________________________________ </p>
-                <p>“This Page is so you have your own freedom to talk about your views and ideas, If for any reason you show harm or offence to yourself or anybody else’s safety or well-being your information will be disclosed and used to know the identify of yourself, but only to the admins will be aware of this information. Besides from this your information is completely safe and not be displayed to the public”.</p>
+                <p>This Page is so you have your own freedom to talk about your views and ideas, If for any reason you show harm or offence to yourself or anybody elses safety or well-being your information will be disclosed and used to know the identify of yourself, but only to the admins will be aware of this information. Besides from this your information is completely safe and not be displayed to the public.</p>
                             <p>___</p>
                         </div>  
                 </div>
