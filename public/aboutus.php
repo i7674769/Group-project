@@ -62,7 +62,7 @@
                     </div>
                     <div class="box">
                         <img src="img/Darlene.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Darlene Büttner</h1>
+                    <h1>Darlene Buttner</h1>
                         <p><a class="box1" href="http://www.darlenebuttner.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                     </div>      
                     <div class="box">
@@ -77,7 +77,7 @@
         </div>
                     <div class="box">
                         <img src="img/rafiel.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Israfiél Négasi</h1>
+                    <h1>Israfiel Negasi</h1>
                         <p><a class="box1" href="http://www.rafielnegasi.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                         </div>
                     
