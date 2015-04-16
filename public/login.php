@@ -3,16 +3,11 @@
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 
-<?php     
-    if(isset($_POST["submit"])) { //Only if the form 'submit' is submitted.
-        $post = ucfirst($_POST["post"]); //Declaring variable $post. //The first character is displayed capital.
-    } else {
-        $post = ""; //Else field is empty.
-    }
+<?php 
     if(isset($_POST["login"])) { //Only if the form 'login' is submitted.
-        $name = $_POST["name"]; //Declaring variable $name.
+        $student_id = $_POST["student_id"]; //Declaring variable $name.
         $password = $_POST["password"]; //Declaring variable password.
-        $query = "SELECT * FROM users WHERE name='{$name}' AND password='{$password}'LIMIT 1"; //Query to select name and password from the table users. 
+        $query = "SELECT * FROM users WHERE student_id='{$student_id}' AND password='{$password}'LIMIT 1"; //Query to select name and password from the table users. 
         $result = mysqli_query($connect, $query); 
         
         if ($user = mysqli_fetch_assoc($result)) { //Only if successful. Saving variables user/gender/user_id from selected user collum in session. 
