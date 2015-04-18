@@ -1,6 +1,0 @@
-The "delete"-buttons should be hidden if the post were not written by user online.
-
-The "edit" option does not work yet.
-
-The header moves after alert message is closed.
-
