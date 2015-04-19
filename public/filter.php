@@ -10,6 +10,11 @@
 <!doctype html>
 <html>
     <head>
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        
         <title>Filter</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
@@ -83,7 +88,7 @@ Only show posts from: <select name="sort" class="dropdown">
                             }
                     ?>
             <div class="footer">
-                Copyright ©Turtletalks.com 
+                Copyright &copy;Turtletalks.com 
             </div>
 
 

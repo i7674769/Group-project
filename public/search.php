@@ -1,3 +1,5 @@
+<!-- This is the section that tells the server what to search for>
+
 <?php
     $output='';
         if(isset($_GET["search"])) {
