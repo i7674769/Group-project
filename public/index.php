@@ -6,7 +6,7 @@
 <?php require_once("../includes/connect.php"); ?>
 <?php require_once("../includes/functions.php"); ?>
 <?php include_once("../includes/templates/header.php"); ?>
-<!--Search bar, this filters through the posts to find the phrase they are looking for.
+<!--Search bar, this filters through the posts to find the phrase they are looking for.--> 
 <?php 
     if(isset($_POST["sort"])) {
         $sort = $_POST["sort-by"];
@@ -36,7 +36,6 @@
 <!doctype html>
 <html>
     <head>
-        
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="HandheldFriendly" content="true">
