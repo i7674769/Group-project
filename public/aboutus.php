@@ -9,6 +9,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        
+        
             <title>Turtle Talks</title>
             <link rel="stylesheet" href="css/styles.css" type="text/css"/>
             <link rel="stylesheet" href="css/style.css" type="text/css"/>
@@ -62,7 +67,7 @@
                     </div>
                     <div class="box">
                         <img src="img/Darlene.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Darlene Büttner</h1>
+                    <h1>Darlene B&uuml;ttner</h1>
                         <p><a class="box1" href="http://www.darlenebuttner.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                     </div>      
                     <div class="box">
@@ -77,7 +82,7 @@
         </div>
                     <div class="box">
                         <img src="img/rafiel.jpg" style="width: 100px; height: 100x; display: inline; margin: auto">
-                    <h1>Israfiél Négasi</h1>
+                    <h1>Israfi&eacute;l N&eacute;gasi</h1>
                         <p><a class="box1" href="http://www.rafielnegasi.wordpress.com" role="button" style="margin-bottom: 15px">View Blog &raquo;</a></p>
                         </div>
                     
@@ -85,12 +90,12 @@
                             <p>___</p>
                 <p>Hello There! and Welcome to TURTLE TALKS! Make yourself feel at home and kick back and just relax! This website is made for Bournemouth University Students to express themself freely due to all posts on this website are anonymous. You can express your ideas, experiences and views about anything you like while in uni and also at home anonymously to over peers here at Bournemouth University. This site is so you can freely post what you wish without the theat of other people knowing who has posed it...</p>         
                 <p>__________________________________________________________ </p>
-                <p>“This Page is so you have your own freedom to talk about your views and ideas, If for any reason you show harm or offence to yourself or anybody else’s safety or well-being your information will be disclosed and used to know the identify of yourself, but only to the admins will be aware of this information. Besides from this your information is completely safe and not be displayed to the public”.</p>
+                <p>This Page is so you have your own freedom to talk about your views and ideas, If for any reason you show harm or offence to yourself or anybody elses safety or well-being your information will be disclosed and used to know the identify of yourself, but only to the admins will be aware of this information. Besides from this your information is completely safe and not be displayed to the public.</p>
                             <p>___</p>
                         </div>  
                 </div>
                 <div class="footer">
-                        Copyright ©Turtletalks.com 
+                        Copyright &copy;Turtletalks.com 
                 </div>
 
         </div>
