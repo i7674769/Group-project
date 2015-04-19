@@ -75,10 +75,13 @@
                         </div>
                         <div class="delete"><a href="delete.php?id=<?php echo $_SESSION["user_id"] ?>">Sure?</a></div>
                         </div>
-                        <div class="box_hello"><a>Hello, <?php echo ucfirst($_SESSION["user"]); //To adress the user logged in, the name saved as session variable is displayed. ?>! </a></div>
+                        <div class="box_hello2"><a>Hello, <?php echo ucfirst($_SESSION["user"]); //To adress the user logged in, the name saved as session variable is displayed. ?>! </a></div>
                         <form class="box_post_gender_content" action="index.php" method="post">
+                            <div id="form_post">
                             <!-- The following Attribute 'pattern' is used to validate the input and set a min/max of allowed characters.-->
                             What's up? <input type="text" name="post" value="" placeholder="Max 1000 words.." pattern=".{4,1000}" required title="4 characters minimum/1000 characters maximum"/>
+                            </div>
+                            <div id="form_place">
                             Where are you?: <select name="place_of_post" class="dropdown">
                                             <option value="">--Select--</option>
                                             <option value="talbot campus">Talbot Campus</option>
@@ -91,6 +94,7 @@
                                             </select>
                         <input type="submit" name="submit" value="Submit" />
                         </form>
+                            </div>
                     </div>
                     
                     <div class="footer">
