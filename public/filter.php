@@ -55,14 +55,14 @@
                     <form class="sort_place" action="filter.php" method="post">
 Only show posts from: <select name="sort" class="dropdown">
                             <option value="">--Select--</option>
-                            <option value="talbot campus">Talbot Campus</option>
-                            <option value="landsdowm campus">Landsdown Campus</option>
-                            <option value="halls">Halls</option>
-                            <option value="private accommodation">Private Accommodation</option>
-                            <option value="unilet">Unilet</option>
-                            <option value="town">Town</option>
-                            <option value="none">None</option>
-                        <input type="submit" onClick="redirect();" />
+                                    <option value="talbot campus">Talbot Campus</option>
+                                    <option value="landsdowm campus">Landsdown Campus</option>
+                                    <option value="halls">Halls</option>
+                                    <option value="private accommodation">Private Accommodation</option>
+                                    <option value="unilet">Unilet</option>
+                                    <option value="town">Town</option>
+                                    <option value="none">None</option>
+                        <input value="Go" type="submit" onClick="redirect();" />
                         </select>
                     </form>
                     </div>
